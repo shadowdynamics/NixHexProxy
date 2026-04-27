@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "hexproxy-source": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1776456130,
+        "narHash": "sha256-G9HHtb3TXuqBz2o83mF8k3Tw89VgUOqruXHJf8y5+7U=",
+        "owner": "Secure-Hex",
+        "repo": "HexProxy",
+        "rev": "a33772df9e3fd80aaf7f70a2966adf55f0a9ae74",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Secure-Hex",
+        "repo": "HexProxy",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1776877367,
+        "narHash": "sha256-EHq1/OX139R1RvBzOJ0aMRT3xnWyqtHBRUBuO1gFzjI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0726a0ecb6d4e08f6adced58726b95db924cef57",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "0726a0e",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "hexproxy-source": "hexproxy-source",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
