@@ -15,9 +15,9 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
         pythonEnv = pkgs.python313.withPackages (ps: with ps; [
-	      packaging  # <--- Missing dependency detected
-	      brotli     # <--- Required for high-performance proxying
-        pip
+	      packaging  
+	      brotli    
+		  pip
       ]);
     in {
 	    devShells.${system}.default = pkgs.mkShell {
