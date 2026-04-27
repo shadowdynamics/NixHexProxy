@@ -21,12 +21,12 @@
       ]);
     in {
 	    devShells.${system}.default = pkgs.mkShell {
-      buildInputs = [ pythonEnv pkgs.openssl ]; 
+      	buildInputs = [ pythonEnv pkgs.openssl ]; 
         shellHook = ''
 		      export HEXPROXY_SRC="${hexproxy-source}"
 		      export PYTHONPATH="$HEXPROXY_SRC/src:$PYTHONPATH"
 		      echo "--- HexProxy Ready for Activation ---"
 		    '';
-	};
+		};
      };
 }
